@@ -6,18 +6,17 @@
 }
 header {
     height: 70px;
-    width: 100vw;
+    width: 100%;
     background-color: #ff5b5e;
     text-align: center;
     position: fixed;
 }
-header img {
+header #logo {
     height: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-right: 15px;
 }
 body {
     margin: auto;
@@ -31,7 +30,7 @@ body {
      z-index: -1;
      padding-bottom: 100px;
  }
-.brescia {
+#brescia {
     border: 4px solid white;
     width: 200px;
     height: 150px;
@@ -39,46 +38,32 @@ body {
     background-position: top right;
     position: relative;
 }
-.milano {
+.città {
     border: 4px solid white;
     border-top: none;
     /* solo la prima pic(.brescia) ha tutti i bordi*/
 
     width: 200px;
     height: 150px;
+    position: relative;
+    background-size: cover;
+}
+
+#milano {
     background-image: url("img/milano.jpg");
     background-position: top right;
-    position: relative;
 }
-.wuhan {
-    border: 4px solid white;
-    border-top: none;
-    width: 200px;
-    height: 150px;
+#wuhan {
     background-image: url("img/wuhan.jpg");
     background-position: top left;
-    background-size: cover;
-    position: relative;
 }
-.berlino {
-    border: 4px solid white;
-    border-top: none;
-    width: 200px;
-    height: 150px;
+#berlino {
     background-image: url("img/berlino.jpg");
     background-position: top left;
-    background-size: cover;
-    position: relative;
 }
-.città_casuale {
-    border: 4px solid white;
-    border-top: none;
-    width: 200px;
-    height: 150px;
+#città_casuale {
     background-image: url("img/città.jpg");
     background-position: top left;
-    background-size: cover;
-    position: relative;
 }
 main p {
     color: white;

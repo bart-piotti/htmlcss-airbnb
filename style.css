@@ -61,7 +61,14 @@ body {
     background-image: url("img/berlino.jpg");
     background-position: top left;
 }
-#città_casuale {
+.città_casuale {
+    border: 4px solid white;
+    border-top: none;
+    /* solo la prima pic(.brescia) ha tutti i bordi*/
+    width: 200px;
+    height: 150px;
+    position: relative;
+    background-size: cover;
     background-image: url("img/città.jpg");
     background-position: top left;
 }
@@ -76,7 +83,7 @@ main p {
     font-size: 18px;
 }
 
-#opaco {
+.opaco {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,11 +92,11 @@ main p {
   background-color: rgba(0,0,0,0.3);
 }
 
-#opaco:hover {
+.opaco:hover {
     background-color: rgba(0,0,0,0);
 }
 
-#opaco:hover p {
+.opaco:hover p {
     background-color: rgba(41, 241, 195, 0.7);
     width: 100%;
     text-align: center;

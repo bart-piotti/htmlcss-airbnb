@@ -4,20 +4,35 @@
     box-sizing: border-box;
     font-family: 'Baloo Chettan 2', cursive;
 }
-
+header {
+    height: 70px;
+    width: 100vw;
+    background-color: #ff5b5e;
+    text-align: center;
+    position: fixed;
+}
+header img {
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-right: 15px;
+}
 body {
     margin: auto;
     background-color: #1e2d3c;
 }
- main{
+ main {
      position: absolute;
-     top: 50%;
+     top: 100px;
      left: 50%;
-     transform: translate(-50%, -50%);
+     transform: translatex(-50%);
+     z-index: -1;
+     padding-bottom: 100px;
  }
 .brescia {
     border: 4px solid white;
-    border-bottom: none;
     width: 200px;
     height: 150px;
     background-image: url("img/brescia.jpg");
@@ -26,7 +41,9 @@ body {
 }
 .milano {
     border: 4px solid white;
-    border-bottom: none;
+    border-top: none;
+    /* solo la prima pic(.brescia) ha tutti i bordi*/
+
     width: 200px;
     height: 150px;
     background-image: url("img/milano.jpg");
@@ -35,6 +52,7 @@ body {
 }
 .wuhan {
     border: 4px solid white;
+    border-top: none;
     width: 200px;
     height: 150px;
     background-image: url("img/wuhan.jpg");
@@ -42,7 +60,26 @@ body {
     background-size: cover;
     position: relative;
 }
-
+.berlino {
+    border: 4px solid white;
+    border-top: none;
+    width: 200px;
+    height: 150px;
+    background-image: url("img/berlino.jpg");
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+}
+.città_casuale {
+    border: 4px solid white;
+    border-top: none;
+    width: 200px;
+    height: 150px;
+    background-image: url("img/città.jpg");
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+}
 main p {
     color: white;
     display: inline-block;
@@ -54,7 +91,7 @@ main p {
     font-size: 18px;
 }
 
-#opaco{
+#opaco {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,11 +100,11 @@ main p {
   background-color: rgba(0,0,0,0.3);
 }
 
-#opaco:hover{
+#opaco:hover {
     background-color: rgba(0,0,0,0);
 }
 
-#opaco:hover p{
+#opaco:hover p {
     background-color: rgba(41, 241, 195, 0.7);
     width: 100%;
     text-align: center;
